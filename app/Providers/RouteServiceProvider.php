@@ -88,7 +88,8 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected function mapAlexaRoutes()
     {
-        require base_path('routes/alexa.php');
+        require base_path('routes/alexa/test.php');
+        require base_path('routes/alexa/studiesalg.php');
 //        Route::group([
 //            'middleware' => 'alexa',
 ////            'namespace' => $this->namespace,

@@ -35,4 +35,8 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'studiesalg' => [
+        'key' => '9211954a92856787e96534f5ea80de7a'
+    ],
+
 ];
