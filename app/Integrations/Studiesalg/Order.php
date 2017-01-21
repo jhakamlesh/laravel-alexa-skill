@@ -56,8 +56,8 @@ class Order
      */
     public function needsBankTransfer()
     {
-        return ($date = $this->date('Tid_betaling')) !== null
-            ? $date->lte(Carbon::tomorrow($this->tz)->endOfDay())
+        return ($date = $this->date('Tid_modtaget')) !== null
+            ? $date->addDays(15)->startOfDay()->lte(Carbon::tomorrow($this->tz)->endOfDay())
             : false;
     }
 
