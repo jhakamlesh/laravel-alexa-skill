@@ -31,7 +31,7 @@ class FlashBriefingController extends Controller
     {
         return [
             'uid' => md5(time()),
-            'updateDate' => Carbon::now()->toDateTimeString(),
+            'updateDate' => str_replace(' ', 'T', Carbon::now()->toDateTimeString()).'.0Z',
             'titleText' => 'Studiesalg Today',
             'mainText' => (string) new Status($this->studiesalg->orders()->open())
         ];
