@@ -38,7 +38,7 @@ class Kernel extends HttpKernel
         ],
 
         'alexa' => [
-//            \Develpr\AlexaApp\Http\Middleware\Certificate::class,
+            \Develpr\AlexaApp\Http\Middleware\Certificate::class,
         ]
     ];
 

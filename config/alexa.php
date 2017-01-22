@@ -12,7 +12,7 @@ return [
      | @see https://developer.amazon.com/public/solutions/devices/echo/alexa-app-kit/docs/handling-requests-sent-by-the-alexa-service
      |
      */
-    'verifyAppId' => env('ALEXA_VERIFY_APP_ID', false),
+    'verifyAppId' => env('ALEXA_VERIFY_APP_ID', true),
 
     /*
      |--------------------------------------------------------------------------
@@ -35,7 +35,10 @@ return [
      | @see https://developer.amazon.com/public/solutions/devices/echo/alexa-app-kit/docs/handling-requests-sent-by-the-alexa-service
      |
      */
-    'applicationIds' => env('ALEXA__APPLICATION_IDS', []),
+    'applicationIds' => env('ALEXA__APPLICATION_IDS', [
+        'amzn1.ask.skill.2e4c2afd-e27d-4c09-8fe9-eb20fd1eab7a', // Studiesalg Status skill
+        'amzn1.ask.skill.632835e6-f66d-4377-a36b-5b6dd75813f0', // Studiesalg Flash Briefing
+    ]),
 
 
     /*
