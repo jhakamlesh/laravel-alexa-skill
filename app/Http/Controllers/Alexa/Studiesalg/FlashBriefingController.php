@@ -33,7 +33,7 @@ class FlashBriefingController extends Controller
             'uid' => md5(time()),
             'updateDate' => Carbon::now()->toDateTimeString(),
             'titleText' => 'Studiesalg Today',
-            'mainText' => new Status($this->studiesalg->orders()->open())
+            'mainText' => (string) new Status($this->studiesalg->orders()->open())
         ];
     }
 

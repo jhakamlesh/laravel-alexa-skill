@@ -4,7 +4,7 @@
 AlexaRoute::launch('/studiesalg', 'App\Http\Controllers\Alexa\Studiesalg\StatusSkillController@statusToday');
 
 // Flash briefing route
-Route::get('/studiesalg/flash', 'Alexa\Studiesalg\FlashBriefingController@index');
+Route::get('/studiesalg/flash', 'App\Http\Controllers\Alexa\Studiesalg\FlashBriefingController@index');
 
 
 
